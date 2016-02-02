@@ -1,0 +1,36 @@
+{
+  "manifest_version": 2,
+  
+  "name": "Tabageddon",
+  "version": "0.0.1",
+  "description": "Chrome workspace manager",
+  "homepage_url": "http://github.com/tehbilly/tabageddon",
+  "icons": {
+    "16": "assets/icon16.png",
+    "48": "assets/icon48.png",
+    "128": "assets/icon128.png"
+  },
+
+  "default_locale": "en",
+  "options_page": "options/index.html",
+  "permissions": [
+    "tabs"
+  ],
+  
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": false
+  },
+  
+  "commands": {
+      "launch-tabageddon": {
+          "suggested_key": {
+              "default": "Ctrl+Shift+U"
+          },
+          "description": "Launch Tabageddon",
+          "global": false
+      }
+  }
+}

@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>Oh Hello</title>
+    </head>
+    <body id="tg-window">
+        <ul>
+            <template v-for="tab in tabs">
+                <li>
+                    <img width="16" height="16" :src="uriToStyle(tab.favIconUrl)"></div> {{tab.title}}
+                </li>
+            </template>
+        </ul>
+    </body>
+    <script src="../vendor/vue.js"></script>
+    <script src="app.js"></script>
+</html>
